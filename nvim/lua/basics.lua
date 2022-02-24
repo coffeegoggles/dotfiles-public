@@ -1,15 +1,20 @@
 vim.g.mapleader = " "
-vim.bo.expandtab = true
-vim.bo.shiftwidth = 4
-vim.bo.softtabstop = 4
-vim.o.wrap = false
-vim.o.number = true
-vim.o.swapfile = false
-vim.o.splitbelow = true
-vim.o.splitright = true
-vim.o.ignorecase = true
-vim.o.scrolloff = 2
-vim.o.mouse = 'a'
+
+vim.opt.wrap = false
+vim.opt.number = true
+vim.opt.swapfile = false
+vim.opt.splitbelow = true
+vim.opt.splitright = true
+vim.opt.ignorecase = true
+vim.opt.scrolloff = 2
+
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
+vim.opt.tabstop = 4
+vim.opt.smartindent = true
+
+vim.opt.mouse = 'a'
+vim.opt.clipboard = 'unnamedplus'
 
 local opts = { noremap = true }
 local keymap = vim.api.nvim_set_keymap
