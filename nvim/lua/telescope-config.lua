@@ -1,6 +1,23 @@
 local telescope = require('telescope')
 
 telescope.setup{
+    defaults = {
+        file_ignore_patterns = {
+            "node_modules",
+            "venv"
+        }
+    },
+    vimgrep_arguments = {
+        'rg',
+        '--color=never',
+        '--n=heading',
+        '--with-filename',
+        '--line-number',
+        '--column',
+        '--smart-case',
+        '--ignore-file',
+        '.gitignore'
+    },
     pickers = {
         find_files = {
             theme = "ivy",
